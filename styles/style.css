@@ -1,0 +1,154 @@
+/* 
+COLOR PALETTE:
+gold: #cc9901;
+yellow: #daa520;
+red: #7c0a01;/
+maroon: #3d0c01;
+dark: #1b1811;
+gray: #e5e5e5;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    padding: 1rem 3rem;
+    background-color: #1b1811;
+}
+
+#navBar, #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+.menu-icon, .search-icon {
+    font-size: 1.5rem;
+    color: #cc9901;
+}
+
+.logo {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #cc9901;
+}
+
+#header {
+    margin: 3rem 0;
+    height: 80vh;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+}
+
+.hero-text .bold {
+    font-weight: 800;
+}
+
+.hero-media {
+    position: relative;
+    padding: 0;
+}
+
+.hero-media img {
+    border-radius: 10px;
+}
+
+.play-btn {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    margin: auto;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #1b1811;
+    opacity: 95%;
+    border-radius: 10px;
+}
+
+.play-btn__svg {
+    transition: 1s;
+    transform: scale(.5);
+    transform-origin: center;
+    fill: #ca9800;
+    opacity: .9;
+}
+
+.play-btn:hover .play-btn__svg {
+    fill: #ffffff;
+    transform: scale(.6);
+    opacity: 1;
+}
+
+.break {
+    height: 3px;
+    background-color: #ca9800;
+    border-radius: 10px;
+}
+
+.count-container {
+    background-color: #1b1811;
+}
+
+.count-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: #ca9800;
+    margin: 0;
+}
+
+.count-name {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.yt-cta-btn button {
+    background-color: #7c0a01;
+    border: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 200px;
+}
+
+.pgrm-container {
+    background-color: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+    .yt-cta-btn button {
+        padding: 10px 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .yt-cta-btn button {
+        padding: 10px 70px;
+    }
+}
+
