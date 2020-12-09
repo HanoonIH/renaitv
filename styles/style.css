@@ -110,7 +110,7 @@ nav {
     border-radius: 10px;
 }
 
-.count-container {
+.dark-container {
     background-color: #1b1811;
 }
 
@@ -127,8 +127,7 @@ nav {
     margin: 0;
 }
 
-.yt-cta-btn button {
-    background-color: #7c0a01;
+.yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button {
     border: 0;
     font-size: 1.7rem;
     font-weight: 500;
@@ -136,18 +135,67 @@ nav {
     padding: 10px 200px;
 }
 
+.yt-cta-btn button {
+    background-color: #7c0a01;
+}
+
+.fb-cta-btn button {
+    background-color: #3B5998;
+}
+
 .pgrm-container {
+    padding: 50px 0;
+    background-color: #e5e5e5 ;
+}
+
+.pgrm-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.blog-container {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.blog-card {
+    padding: 0;
     background-color: #e5e5e5;
 }
 
+.blog-info {
+    color: #ffffff;
+    background-color: #1b1811;
+    padding: 15px 15px 5px 15px;
+}
+
+.blog-date {
+    color: #ca9800;
+}
+
+.blog-cta-btn button {
+    color: #1b1811;
+    background-color: #ca9800;
+    font-weight: 600;
+}
+
+.title-box-overlap {
+    position: absolute;
+    z-index: 1;
+    top: -32px;
+    left: 0;
+    right: 0;
+    margin: 0 50px;
+}
+
 @media (max-width: 768px) {
-    .yt-cta-btn button {
+    .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button {
         padding: 10px 120px;
     }
 }
 
 @media (max-width: 576px) {
-    .yt-cta-btn button {
+    .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button {
         padding: 10px 70px;
     }
 }
