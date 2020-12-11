@@ -16,6 +16,10 @@ gray: #e5e5e5;
     font-family: 'Lato', sans-serif;
 }
 
+.renai-color {
+    color: #ca9800;
+}
+
 nav {
     padding: 1rem 3rem;
     background-color: #1b1811;
@@ -127,7 +131,10 @@ nav {
     margin: 0;
 }
 
-.yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button {
+.yt-cta-btn button,
+.fb-cta-btn button,
+.blog-cta-btn button,
+.donate-cta-btn button {
     border: 0;
     font-size: 1.7rem;
     font-weight: 500;
@@ -179,23 +186,48 @@ nav {
     font-weight: 600;
 }
 
-.title-box-overlap {
-    position: absolute;
-    z-index: 1;
-    top: -32px;
-    left: 0;
-    right: 0;
-    margin: 0 50px;
+.donate-cta-title {
+    background-color: #7c0a01;
+    border: 0;
+    display: inline-block; 
+    padding: 10px 200px;
+}
+
+.donate-cta-title h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff; 
+    margin: 0;
+}
+
+.donate-cta-text {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.swadaqa-text {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #7c0a01;
+}
+
+.donate-cta-btn button {
+    background-color: #ca9800;
+    color: #7c0a01;
+    font-weight: 800;
 }
 
 @media (max-width: 768px) {
-    .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button {
+    .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button, .donate-cta-btn button,
+    .donate-cta-title {
         padding: 10px 120px;
     }
 }
 
 @media (max-width: 576px) {
-    .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button {
+    .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button, .donate-cta-btn button,
+    .donate-cta-title {
         padding: 10px 70px;
     }
 }
