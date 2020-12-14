@@ -31,9 +31,39 @@ nav {
     align-items: center;
 }
 
+#navMenu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-color: #1b1811;
+    overflow: scroll;
+    display: none;
+
+    transition: ease;
+}
+
+#navMenu ul {
+    padding: 0;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link a {
+     text-decoration: none;
+     font-size: 2rem;
+     font-weight: 700;
+     color: #cc9901;
+}
+
 #menuToggle input {
     display: none;
 }
+
+/* #menuToggle input:checked ~ #navMenu {
+    display: block;
+} */
 
 .menu-icon, .search-icon {
     font-size: 1.5rem;
@@ -209,6 +239,7 @@ nav {
 .swadaqa-text {
     font-size: 1.6rem;
     font-weight: 800;
+    line-height: 2.7rem;
     color: #7c0a01;
 }
 
@@ -217,6 +248,44 @@ nav {
     color: #7c0a01;
     font-weight: 800;
 }
+
+.footer {
+    background-color: #000000;
+}
+
+.footer-brand {
+    height: 1.8rem;
+    width: auto;
+    margin-left: 8px;
+}
+
+.footer-social i {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 5px;
+    text-align: center;
+    margin: 20px 5px 0 0;
+    transition: ease .3s;
+}
+
+.footer-social i:hover {
+    transform: scale(1.1);
+    color: #cc9901;
+}
+
+.footer-end p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.footer-end-renai {
+    color: #ca9800;
+}
+
+.footer-end-boxdev, .footer-end-renai {
+    font-weight: 700;
+}
+
 
 @media (max-width: 768px) {
     .yt-cta-btn button, .fb-cta-btn button, .blog-cta-btn button, .donate-cta-btn button,
