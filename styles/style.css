@@ -256,19 +256,28 @@ nav {
 .footer-brand {
     height: 1.8rem;
     width: auto;
-    margin-left: 8px;
+}
+
+.footer-social a {
+    padding: 10px;
+    margin: 20px 5px 0 0;
+    border: solid 1px #ffffff;
+    transition: ease .3s;
 }
 
 .footer-social i {
     color: #ffffff;
-    font-size: 2rem;
-    padding: 5px;
+    font-size:1.5rem;
     text-align: center;
-    margin: 20px 5px 0 0;
+    width: 1.6rem;
     transition: ease .3s;
 }
 
-.footer-social i:hover {
+.footer-social a:hover {
+    background-color: #fff;
+}
+
+.footer-social a:hover i  {
     transform: scale(1.1);
     color: #cc9901;
 }
@@ -284,6 +293,22 @@ nav {
 
 .footer-end-boxdev, .footer-end-renai {
     font-weight: 700;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #cc9901;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-weight: 200;
+}
+
+.footer-item:hover {
+    color: #cc9901;
 }
 
 
