@@ -37,17 +37,6 @@
         </div>
     </nav>
 
-    <script>
-        function toggleMenu() {
-            let navMenu = document.getElementById('navMenu');
-            if (navMenu.style.display === 'none') {
-                navMenu.style.display = 'block'
-            } else {
-                navMenu.style.display = 'none'
-            }
-        }
-    </script>
-
     <!-- Nav items display -->
     <section class="" id="navMenu">
         <div class="break"></div>
@@ -77,8 +66,8 @@
                 </h1>
             </div>
 
-            <div class="hero-media col-md-6">
-                <img src="" alt="" class="img-fluid" id="heroThumbImg">
+            <div class="hero-media col-md-6 ">
+                <!-- <img src="" alt="" class="img-fluid" id="heroThumbImg">
                 <div class="overlay"></div>
                 <div class="play-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
@@ -86,6 +75,9 @@
                         <path class="play-btn__svg"
                             d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
                     </svg>
+                </div> -->
+                <div class="container videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F-dc13WaCOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -149,14 +141,19 @@
                 <p class="count-name">videos</p>
             </div>
         </div>
-        <a href="" class="yt-cta-btn"><button class="my-5">Subscribe now</button></a>
+        <a href="" class="yt-cta-btn cta-btn"><button class="my-5">Subscribe now</button></a>
     </section>
 
     <section class="pgrm-container">
         <div class="container">
             <h1 class="text-center">Programmes</h1>
             <div class="row d-flex justify-content-center text-center p-3">
-                <div class="pgrm-card p-5 col-md-3 m-3">Hanoon IH</div>
+                <div class="pgrm-card col-md-3 m-3">
+                    <img class="img-fluid" src="media/images/ctuber.jpg" alt="">
+                </div>
+                <div class="pgrm-card col-md-3 m-3">
+                    <img class="img-fluid" src="media/images/debate.jpg" alt="">
+                </div>
                 <div class="pgrm-card p-5 col-md-3 m-3">Hanoon IH</div>
                 <div class="pgrm-card p-5 col-md-3 m-3">Hanoon IH</div>
                 <div class="pgrm-card p-5 col-md-3 m-3">Hanoon IH</div>
@@ -185,7 +182,7 @@
                 <p class="count-name">posts</p>
             </div>
         </div>
-        <a href="" class="fb-cta-btn"><button class="my-5">Follow now</button></a>
+        <a href="" class="fb-cta-btn cta-btn"><button class="my-5">Follow now</button></a>
     </section>
 
     <section class="blog-container">
@@ -228,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <a href="https://renaitv.weebly.com/blog/category/all" class="blog-cta-btn" target="_blank"><button
+            <a href="https://renaitv.weebly.com/blog/category/all" class="blog-cta-btn cta-btn" target="_blank"><button
                     class="my-5">Read more</button></a>
         </div>
     </section>
@@ -247,7 +244,7 @@
                 Donate and support Renai TV. <br>
                 You’ve got a chance to perform a <br> <span class="swadaqa-text"> SWADAQATHUN JARIYA</span>
             </p>
-            <a href="https://renaitv.weebly.com/blog/category/all" class="donate-cta-btn" target="_blank"><button
+            <a href="https://renaitv.weebly.com/blog/category/all" class="donate-cta-btn cta-btn" target="_blank"><button
                     class="mt-0">DONATE NOW</button></a>
         </div>
     </section>
@@ -288,35 +285,57 @@
                         </svg>
                     </div>
                     <div class="footer-social my-3 ">
-                        <a href="" class="my-auto"><i class="fab fa-youtube"  ></i></a>
-                        <a href="" class="my-auto"><i class="fab fa-facebook-f"  ></i></a>
-                        <a href="" class="my-auto"><i class="fab fa-whatsapp"  ></i></a>
-                        <a href="" class="my-auto"><i class="fab fa-instagram"  ></i></a>
-                        <a href="" class="my-auto"><i class="fab fa-twitter"  ></i></a>
+                        <a href="" class="my-auto"><i class="fab fa-youtube"></i></a>
+                        <a href="" class="my-auto"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="my-auto"><i class="fab fa-whatsapp"></i></a>
+                        <a href="" class="my-auto"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="my-auto"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
                 <div class="">
                     <p class="footer-title">More info</p>
-                    <a class="footer-item" href=""><p>About</p></a>
-                    <a class="footer-item" href=""><p>Team</p></a>
-                    <a class="footer-item" href=""><p>Donate</p></a>
-                    <a class="footer-item" href=""><p>Support</p></a>
+                    <a class="footer-item" href="">
+                        <p>About</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Team</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Donate</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Support</p>
+                    </a>
                 </div>
 
                 <div class="">
                     <p class="footer-title">Business</p>
-                    <a class="footer-item" href=""><p>Affiliate</p></a>
-                    <a class="footer-item" href=""><p>Team</p></a>
-                    <a class="footer-item" href=""><p>Donate</p></a>
+                    <a class="footer-item" href="">
+                        <p>Affiliate</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Team</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Donate</p>
+                    </a>
                 </div>
 
                 <div class="">
                     <p class="footer-title">Advertisement</p>
-                    <a class="footer-item" href=""><p>Ads</p></a>
-                    <a class="footer-item" href=""><p>Video ads</p></a>
-                    <a class="footer-item" href=""><p>Sponsorships</p></a>
-                    <a class="footer-item" href=""><p>Support</p></a>
+                    <a class="footer-item" href="">
+                        <p>Ads</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Video ads</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Sponsorships</p>
+                    </a>
+                    <a class="footer-item" href="">
+                        <p>Support</p>
+                    </a>
                 </div>
             </div>
 

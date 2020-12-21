@@ -38,7 +38,6 @@ nav {
     background-color: #1b1811;
     overflow: scroll;
     display: none;
-
     transition: ease;
 }
 
@@ -138,6 +137,34 @@ nav {
     opacity: 1;
 }
 
+#videoDisplay {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #1b1811;
+    display: none;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  display: flex;
+  align-items: center;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 2px #cc9901;
+}
+
 .break {
     height: 3px;
     background-color: #ca9800;
@@ -172,6 +199,10 @@ nav {
     padding: 10px 200px;
 }
 
+.cta-btn:hover {
+    filter: hue-rotate(90deg);
+}
+
 .yt-cta-btn button {
     background-color: #7c0a01;
 }
@@ -188,6 +219,10 @@ nav {
 .pgrm-card {
     background-color: #ffffff;
     border-radius: 10px;
+}
+
+.pgrm-card img {
+    object-fit: ;
 }
 
 .blog-container {
@@ -338,7 +373,11 @@ nav {
     }
 
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    #header {
+        margin: 0;
     }
 }
 

@@ -1,25 +1,26 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+// Navigation menu
+function toggleMenu() {
+    let navMenu = document.getElementById('navMenu');
+    let icon = document.querySelector('.menu-icon');
+    
+    if (navMenu.style.display === 'none') {
+        navMenu.style.display = 'block';
+        icon.classList.add('fa-times');
+    } else {
+        navMenu.style.display = 'none';
+        icon.classList.remove('fa-times');
     }
 }
+
+// Load youtube video hero section
+document.querySelector('.play-btn').addEventListener('click', toggleVideoDisplay);
+
+function toggleVideoDisplay() {
+    let videoDisplay = document.getElementById('videoDisplay');
+    console.log(videoDisplay);
+    if (videoDisplay.style.display === 'none') {
+        videoDisplay.style.display = 'block';
+    } else {
+        videoDisplay.style.display = 'none';
+    }
+};
